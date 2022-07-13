@@ -2,6 +2,7 @@ package me.dio.simulator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import me.dio.simulator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,5 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.tvHello.text = "Teste"
+
     }
 }
